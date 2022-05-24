@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=PT+Sans+Narrow&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: gainsboro;
+}
+
 body h1, h3 {
     font-family: 'Akshar', sans-serif;
 }
 
 body p {
     font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+}
+
+nav {
+    background-color: aliceblue;
+    padding: 15px 0 15px 0;
 }
 
 footer {
@@ -17,24 +33,27 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    letter-spacing: 3px;
 }
 
 .mid-title {
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    letter-spacing: 3px;
 }
 
 .buttons {
     display: flex;
     justify-content: space-evenly;
+    padding: 25px 0 25px 0;
 }
 
 .button {
     background: none;
     border: none;
     outline: none;
-    font-size: 3rem;
+    font-size: 3.5rem;
     cursor: pointer;
 }
 
@@ -44,8 +63,16 @@ footer {
 }
 
 .scores {
-    margin: 35px;
+    margin: 20px;
     display: flex;
     justify-content: space-evenly;
 }
 
+.score {
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
