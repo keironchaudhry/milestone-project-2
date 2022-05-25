@@ -76,3 +76,18 @@ footer {
     justify-items: center;
     align-items: center;
 }
+
+.score-display {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.winning {
+    font-size: 3rem;
+    opacity: 1;
+}
+
+.losing {
+    font-size: 2rem;
+    opacity: .5;
+}
