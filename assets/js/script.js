@@ -1,18 +1,24 @@
-let choicesButtons = document.querySelector('button');
 
-choicesButtons.addEventListener('click', function(event) {
-    alert("You clicked me!");
-})
+let rockBtn = document.getElementsByClassName(".rock-button");
+let paperBtn = document.getElementsByClassName(".paper-button");
+let scissorsBtn = document.getElementsByClassName(".scissors-button");
+let lizardBtn = document.getElementsByClassName(".lizard-button");
+let spockBtn = document.getElementsByClassName(".spock-button");
 
 
-/*
-choicesButtons.forEach(choicesButton => {
-    choicesButton.addEventListener('click', function(event) {
-        const choiceName = choicesButton.dataset.selection;
-        makeSelection(choiceName);
-    })
-})
+function clickBtn() {
+    alert("You clicked a button!");
+}
 
-function makeSelection(selection) {
-    console.log(selection);
-} */
+function runGame() {
+
+}
+
+function playerScore() {
+
+}
+
+function computerScore() {
+
+}
+
