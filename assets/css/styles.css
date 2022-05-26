@@ -43,13 +43,13 @@ footer {
     letter-spacing: 3px;
 }
 
-.buttons {
+.options {
     display: flex;
     justify-content: space-evenly;
     padding: 25px 0 25px 0;
 }
 
-.rock-button {
+#rock-button {
     background: none;
     border: none;
     outline: none;
@@ -57,12 +57,12 @@ footer {
     cursor: pointer;
 }
 
-.rock-button:hover {
+#rock-button:hover {
     transform: scale(1.3);
     transition: 50ms;
 }
 
-.paper-button {
+#paper-button {
     background: none;
     border: none;
     outline: none;
@@ -70,12 +70,12 @@ footer {
     cursor: pointer;
 }
 
-.paper-button:hover {
+#paper-button:hover {
     transform: scale(1.3);
     transition: 50ms;
 }
 
-.scissors-button {
+#scissors-button {
     background: none;
     border: none;
     outline: none;
@@ -83,12 +83,12 @@ footer {
     cursor: pointer;
 }
 
-.scissors-button:hover {
+#scissors-button:hover {
     transform: scale(1.3);
     transition: 50ms;
 }
 
-.lizard-button {
+#lizard-button {
     background: none;
     border: none;
     outline: none;
@@ -96,12 +96,12 @@ footer {
     cursor: pointer;
 }
 
-.lizard-button:hover {
+#lizard-button:hover {
     transform: scale(1.3);
     transition: 50ms;
 }
 
-.spock-button {
+#spock-button {
     background: none;
     border: none;
     outline: none;
@@ -109,18 +109,18 @@ footer {
     cursor: pointer;
 }
 
-.spock-button:hover {
+#spock-button:hover {
     transform: scale(1.3);
     transition: 50ms;
 }
 
-.scores {
+#scores {
     margin: 20px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.player-score {
+#player-score {
     font-size: 20px;
     display: grid;
     justify-content: center;
@@ -129,7 +129,7 @@ footer {
     align-items: center;
 }
 
-.computer-score {
+#computer-score {
     font-size: 20px;
     display: grid;
     justify-content: center;

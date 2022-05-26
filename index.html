@@ -14,21 +14,21 @@
         <h1 class="main-title">Rock, Paper, Scissors, Lizard, SPOCK!</h1>
         <h3 class="mid-title">👾 Live long and prosper! 👾</h3>
     </nav>
-    <div class="buttons">
-        <button onclick="clickBtn()" class="rock-button">🪨</button>
-        <button onclick="clickBtn()" class="paper-button">📄</button>
-        <button onclick="clickBtn()" class="scissors-button">✂️</button>
-        <button onclick="clickBtn()" class="lizard-button">🦎</button>
-        <button onclick="clickBtn()" class="spock-button">🖖🏽</button>
+    <div class="options">
+        <button data-choice="0" id="rock-button">🪨</button>
+        <button data-choice="1" id="paper-button">📄</button>
+        <button data-choice="2" id="scissors-button">✂️</button>
+        <button data-choice="3" id="lizard-button">🦎</button>
+        <button data-choice="4" id="spock-button">🖖🏽</button>
     </div>
-    <div class="scores">
+    <div id="scores">
         <div>
             <p>Player</p>
-            <span class="player-score">0</span>
+            <span id="player-score">0</span>
         </div>
         <div>
             <p>Computer</p>
-            <span class="computer-score">0</span>
+            <span id="computer-score">0</span>
         </div>
     </div>
     <!-- <div class="score-display">

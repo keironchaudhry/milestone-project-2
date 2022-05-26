@@ -1,24 +1,38 @@
 
-let rockBtn = document.getElementsByClassName(".rock-button");
-let paperBtn = document.getElementsByClassName(".paper-button");
-let scissorsBtn = document.getElementsByClassName(".scissors-button");
-let lizardBtn = document.getElementsByClassName(".lizard-button");
-let spockBtn = document.getElementsByClassName(".spock-button");
+let buttons = document.getElementsByClassName("options");
+let playerScore = document.getElementById("player-score");
+let computerScore = document.getElementById("computer-score");
+let choices = ["rock", "paper", "scissors", "lizard", "spock"]; 
 
-
-function clickBtn() {
-    alert("You clicked a button!");
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+        let playerChoice = this.getAttribute("data-choice");
+        runGame(playerChoice);
+    })
 }
 
-function runGame() {
+function runGame(playerChoice) {
+
+let computerChoice = Math.floor(Math.random() * 5);
+let results = checkWinner(choices[computerChoice], choices[playerChoice]);
+playerWin(results);
 
 }
 
-function playerScore() {
+function playerWin() {
 
 }
 
-function computerScore() {
+function computerWin() {
+
+}
+
+
+function playerScoreIncrement() {
+    
+}
+
+function computerScoreIncrement() {
 
 }
 
