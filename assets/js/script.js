@@ -12,6 +12,8 @@ document.getElementById("spock-button").onclick=playerSpock;
  * Function for player clicking "rock"
  */
 function playerRock() {
+    let computerChoice = randomChoice();
+    checkWinner(computerChoice, "rock");
     alert("You picked rock!");
 }
 
@@ -19,6 +21,8 @@ function playerRock() {
  * Function for player clicking "paper"
  */
 function playerPaper() {
+    let computerChoice = randomChoice();
+    checkWinner(computerChoice, "paper");
     alert("You picked paper!");
 }
 
@@ -26,6 +30,8 @@ function playerPaper() {
  * Function for player clicking "scissors"
  */
 function playerScissors() {
+    let computerChoice = randomChoice();
+    checkWinner(computerChoice, "scissors");
     alert("You picked scissors!");
 }
 
@@ -33,6 +39,8 @@ function playerScissors() {
  * Function for player clicking "lizard"
  */
 function playerLizard() {
+    let computerChoice = randomChoice();
+    checkWinner(computerChoice, "lizard");
     alert("You picked lizard!");
 }
 
@@ -40,6 +48,8 @@ function playerLizard() {
  * Function for player clicking "spock"
  */
 function playerSpock() {
+    let computerChoice = randomChoice();
+    checkWinner(computerChoice, "spock");
     alert("You picked spock!");
 }
 
@@ -47,7 +57,6 @@ function playerSpock() {
  * Function for the basic AI to make a choice of hand
  */
 function randomChoice() {
-
 
 }
 
@@ -62,12 +71,12 @@ function checkWinner() {
  * Function for increasing player score
  */
 function incrementPlayerScore() {
-
+    playerScore++
 }
 
 /**
  * Function for increasing AI score
  */
 function incrementComputerScore() {
-
+    computerScore++
 }
