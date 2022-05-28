@@ -101,13 +101,13 @@ function checkWinner(computerChoice, playersChoice) {
  * Function for increasing player score
  */
 function incrementPlayerScore() {
-    let oldPlayerScore = parseInt(document.getElementById("player-score"));
+    let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++oldPlayerScore;
 }
 /**
  * Function for increasing AI score
  */
 function incrementComputerScore() {
-    let oldComputerScore = parseInt(document.getElementById("computer-score"));
+    let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldComputerScore;
 }
