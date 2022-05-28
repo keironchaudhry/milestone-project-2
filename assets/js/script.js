@@ -1,12 +1,8 @@
-
-let playerScore = document.getElementById("player-score");
-let computerScore = document.getElementById("computer-score");
-
-document.getElementById("rock-button").onclick=playerRock;
-document.getElementById("paper-button").onclick=playerPaper;
-document.getElementById("scissors-button").onclick=playerScissors;
-document.getElementById("lizard-button").onclick=playerLizard;
-document.getElementById("spock-button").onclick=playerSpock;
+document.getElementById("rock").onclick=playerRock;
+document.getElementById("paper").onclick=playerPaper;
+document.getElementById("scissors").onclick=playerScissors;
+document.getElementById("lizard").onclick=playerLizard;
+document.getElementById("spock").onclick=playerSpock;
 
 /**
  * Function for player clicking "rock"
@@ -14,7 +10,6 @@ document.getElementById("spock-button").onclick=playerSpock;
 function playerRock() {
     let computerChoice = randomChoice();
     checkWinner(computerChoice, "rock");
-    alert("You picked rock!");
 }
 
 /**
@@ -23,7 +18,6 @@ function playerRock() {
 function playerPaper() {
     let computerChoice = randomChoice();
     checkWinner(computerChoice, "paper");
-    alert("You picked paper!");
 }
 
 /**
@@ -32,7 +26,6 @@ function playerPaper() {
 function playerScissors() {
     let computerChoice = randomChoice();
     checkWinner(computerChoice, "scissors");
-    alert("You picked scissors!");
 }
 
 /**
@@ -41,7 +34,6 @@ function playerScissors() {
 function playerLizard() {
     let computerChoice = randomChoice();
     checkWinner(computerChoice, "lizard");
-    alert("You picked lizard!");
 }
 
 /**
@@ -50,7 +42,6 @@ function playerLizard() {
 function playerSpock() {
     let computerChoice = randomChoice();
     checkWinner(computerChoice, "spock");
-    alert("You picked spock!");
 }
 
 /**
@@ -61,36 +52,60 @@ function randomChoice() {
     let computerChoice = "rock";
     if (randomNumber >= 0.1 < 0.2) {
         computerChoice = "paper";
-    } else if (randomNumber >= 0.3 < 0.5) {
+    } else if (randomNumber >= 0.4 < 0.6) {
         computerChoice = "scissors";
-    } else if (randomNumber >= 0.5 < 0.7) {
+    } else if (randomNumber >= 0.6 < 0.8) {
         computerChoice = "lizard";
-    } else if (randomNumber >= 0.7 < 0.9) {
+    } else if (randomNumber >= 0.8) {
         computerChoice = "spock";
     } 
 
     return computerChoice;
 }
+
 /**
  * Function for determining whether Player or AI has won
  */
-function checkWinner() {
+function checkWinner(computerChoice, playerChoice) {
     if (playerChoice === computerChoice) {
-        alert("A tie between both opponents!");
-    } 
 
+        alert("A tie between both opponents!");
+
+    } else if (
+
+        (computerChoice == "rock" && playersChoice == "lizard") ||
+        (computerChoice == "rock" && playersChoice == "scissors") ||
+        (computerChoice == "paper" && playersChoice == "rock") ||
+        (computerChoice == "paper" && playersChoice == "spock") ||
+        (computerChoice == "scissors" && playersChoice == "lizard") ||
+        (computerChoice == "scissors" && playersChoice == "paper") ||
+        (computerChoice == "lizard" && playersChoice == "spock") ||
+        (computerChoice == "lizard" && playersChoice == "paper") ||
+        (computerChoice == "spock" && playersChoice == "rock") ||
+        (computerChoice == "spock" && playersChoice == "scissors") 
+
+    ) {
+
+        incrementComputerScore();
+
+    } else {
+
+        incrementPlayerScore();
+
+    }
 }
 
 /**
  * Function for increasing player score
  */
 function incrementPlayerScore() {
-    playerScore++
+    let oldPlayerScore = parseInt(document.getElementById("player-score"));
+    document.getElementById("player-score").innerText = ++oldPlayerScore;
 }
-
 /**
  * Function for increasing AI score
  */
 function incrementComputerScore() {
-    computerScore++
+    let oldComputerScore = parseInt(document.getElementById("computer-score"));
+    document.getElementById("computer-score").innerText = ++oldComputerScore;
 }
