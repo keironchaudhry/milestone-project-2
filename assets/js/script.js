@@ -1,6 +1,6 @@
 
-let playerScore = 0;
-let computerScore = 0;
+let playerScore = document.getElementById("player-score");
+let computerScore = document.getElementById("computer-score");
 
 document.getElementById("rock-button").onclick=playerRock;
 document.getElementById("paper-button").onclick=playerPaper;
@@ -57,9 +57,20 @@ function playerSpock() {
  * Function for the basic AI to make a choice of hand
  */
 function randomChoice() {
+    let randomNumber = Math.random();
+    let computerChoice = "rock";
+    if (randomNumber >= 0.1 < 0.2) {
+        computerChoice = "paper";
+    } else if (randomNumber >= 0.3 < 0.5) {
+        computerChoice = "scissors";
+    } else if (randomNumber >= 0.5 < 0.7) {
+        computerChoice = "lizard";
+    } else if (randomNumber >= 0.7 < 0.9) {
+        computerChoice = "spock";
+    } 
 
+    return computerChoice;
 }
-
 /**
  * Function for determining whether Player or AI has won
  */
