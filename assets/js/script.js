@@ -75,6 +75,9 @@ function randomChoice() {
  * Function for determining whether Player or AI has won
  */
 function checkWinner() {
+    if (playerChoice === computerChoice) {
+        alert("A tie between both opponents!");
+    } 
 
 }
 
