@@ -66,8 +66,8 @@ function randomChoice() {
 /**
  * Function for determining whether Player or AI has won
  */
-function checkWinner(computerChoice, playerChoice) {
-    if (playerChoice === computerChoice) {
+function checkWinner(computerChoice, playersChoice) {
+    if (playersChoice === computerChoice) {
 
         alert("A tie between both opponents!");
 
@@ -87,10 +87,12 @@ function checkWinner(computerChoice, playerChoice) {
     ) {
 
         incrementComputerScore();
+        alert("Computer wins this round!");
 
     } else {
 
         incrementPlayerScore();
+        alert("Player wins this round!");
 
     }
 }
