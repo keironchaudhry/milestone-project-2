@@ -1,8 +1,8 @@
-document.getElementById("rock").onclick=playerRock;
-document.getElementById("paper").onclick=playerPaper;
-document.getElementById("scissors").onclick=playerScissors;
-document.getElementById("lizard").onclick=playerLizard;
-document.getElementById("spock").onclick=playerSpock;
+document.getElementById("rock").onclick=playerRock();
+document.getElementById("paper").onclick=playerPaper();
+document.getElementById("scissors").onclick=playerScissors();
+document.getElementById("lizard").onclick=playerLizard();
+document.getElementById("spock").onclick=playerSpock();
 
 /**
  * Function for player clicking "rock"
@@ -104,10 +104,20 @@ function incrementPlayerScore() {
     let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++oldPlayerScore;
 }
+
 /**
  * Function for increasing AI score
  */
 function incrementComputerScore() {
     let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldComputerScore;
+}
+
+/**
+ * Function for declaring the winner and loser
+ */
+function gameOver() {
+// Function that limits amount of points to 10. 
+// The first variable that reaches 10 has won. Declares this variable the winner.
+// Ends game and resets numbers. 
 }
