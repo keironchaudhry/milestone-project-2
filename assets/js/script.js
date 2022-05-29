@@ -1,8 +1,8 @@
-document.getElementById("rock").onclick=playerRock();
-document.getElementById("paper").onclick=playerPaper();
-document.getElementById("scissors").onclick=playerScissors();
-document.getElementById("lizard").onclick=playerLizard();
-document.getElementById("spock").onclick=playerSpock();
+document.getElementById("rock").onclick=playerRock;
+document.getElementById("paper").onclick=playerPaper;
+document.getElementById("scissors").onclick=playerScissors;
+document.getElementById("lizard").onclick=playerLizard;
+document.getElementById("spock").onclick=playerSpock;
 
 /**
  * Function for player clicking "rock"
@@ -66,23 +66,23 @@ function randomChoice() {
 /**
  * Function for determining whether Player or AI has won
  */
-function checkWinner(computerChoice, playersChoice) {
-    if (playersChoice === computerChoice) {
+function checkWinner(computerChoice, playerChoice) {
+    if (playerChoice === computerChoice) {
 
         alert("A tie between both opponents!");
 
     } else if (
 
-        (computerChoice == "rock" && playersChoice == "lizard") ||
-        (computerChoice == "rock" && playersChoice == "scissors") ||
-        (computerChoice == "paper" && playersChoice == "rock") ||
-        (computerChoice == "paper" && playersChoice == "spock") ||
-        (computerChoice == "scissors" && playersChoice == "lizard") ||
-        (computerChoice == "scissors" && playersChoice == "paper") ||
-        (computerChoice == "lizard" && playersChoice == "spock") ||
-        (computerChoice == "lizard" && playersChoice == "paper") ||
-        (computerChoice == "spock" && playersChoice == "rock") ||
-        (computerChoice == "spock" && playersChoice == "scissors") 
+        (computerChoice == "rock" && playerChoice == "lizard") ||
+        (computerChoice == "rock" && playerChoice == "scissors") ||
+        (computerChoice == "paper" && playerChoice == "rock") ||
+        (computerChoice == "paper" && playerChoice == "spock") ||
+        (computerChoice == "scissors" && playerChoice == "lizard") ||
+        (computerChoice == "scissors" && playerChoice == "paper") ||
+        (computerChoice == "lizard" && playerChoice == "spock") ||
+        (computerChoice == "lizard" && playerChoice == "paper") ||
+        (computerChoice == "spock" && playerChoice == "rock") ||
+        (computerChoice == "spock" && playerChoice == "scissors") 
 
     ) {
 
@@ -103,6 +103,9 @@ function checkWinner(computerChoice, playersChoice) {
 function incrementPlayerScore() {
     let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++oldPlayerScore;
+    if (oldPlayerScore === 5) {
+        alert("Player has won the game. Game over.");
+    } 
 }
 
 /**
@@ -111,13 +114,25 @@ function incrementPlayerScore() {
 function incrementComputerScore() {
     let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldComputerScore;
+    if (oldComputerScore === 5) {
+        alert("Computer has won the game. Game over.");
+    }
 }
 
 /**
  * Function for declaring the winner and loser
  */
-function gameOver() {
+/** function gameOver() {
 // Function that limits amount of points to 10. 
+    let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
+    let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
 // The first variable that reaches 10 has won. Declares this variable the winner.
+    if (oldComputerScore === 5) {
+        alert("Computer has won the game. Game over.");
+        document.getElementById("computer-score").innerText = 0;
+    } else (oldPlayerScore === 5); {
+        alert("Player has won the game. Game over.");
+        document.getElementById("player-score").innerText = 0;
+    }
 // Ends game and resets numbers. 
-}
+} **/
