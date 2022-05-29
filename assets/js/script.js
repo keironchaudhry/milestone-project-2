@@ -103,8 +103,10 @@ function checkWinner(computerChoice, playerChoice) {
 function incrementPlayerScore() {
     let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++oldPlayerScore;
-    if (oldPlayerScore === 5) {
+    if (oldPlayerScore === 10) {
         alert("Player has won the game. Game over.");
+        document.getElementById("player-score").innerText = 0;
+        document.getElementById("computer-score").innerText = 0;
     } 
 }
 
@@ -114,25 +116,10 @@ function incrementPlayerScore() {
 function incrementComputerScore() {
     let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldComputerScore;
-    if (oldComputerScore === 5) {
+    if (oldComputerScore === 10) {
         alert("Computer has won the game. Game over.");
+        document.getElementById("player-score").innerText = 0;
+        document.getElementById("computer-score").innerText = 0;
     }
 }
 
-/**
- * Function for declaring the winner and loser
- */
-/** function gameOver() {
-// Function that limits amount of points to 10. 
-    let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
-    let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
-// The first variable that reaches 10 has won. Declares this variable the winner.
-    if (oldComputerScore === 5) {
-        alert("Computer has won the game. Game over.");
-        document.getElementById("computer-score").innerText = 0;
-    } else (oldPlayerScore === 5); {
-        alert("Player has won the game. Game over.");
-        document.getElementById("player-score").innerText = 0;
-    }
-// Ends game and resets numbers. 
-} **/
