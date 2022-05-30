@@ -51,10 +51,10 @@ footer {
 }
 
 .options {
-    margin: 30px;
+    margin: 20px;
     display: flex;
     justify-content: space-evenly;
-    padding: 25px 0 25px 0;
+    padding: 10px 0 25px 0;
 }
 
 #rock {
@@ -123,9 +123,13 @@ footer {
 }
 
 #scores {
-    margin: 50px;
+    margin: 30px;
     display: flex;
     justify-content: space-evenly;
+}
+
+#scores p {
+    font-size: 35px;
 }
 
 #player-score {
