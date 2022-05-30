@@ -87,12 +87,10 @@ function checkWinner(computerChoice, playerChoice) {
     ) {
 
         incrementComputerScore();
-        alert("Computer wins this round!");
 
     } else {
 
         incrementPlayerScore();
-        alert("Player wins this round!");
 
     }
 }
