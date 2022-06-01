@@ -3,6 +3,7 @@ document.getElementById("paper").onclick=playerPaper;
 document.getElementById("scissors").onclick=playerScissors;
 document.getElementById("lizard").onclick=playerLizard;
 document.getElementById("spock").onclick=playerSpock;
+document.getElementById("reset").onclick=resetGame;
 
 /**
  * Function for player clicking "rock"
@@ -137,4 +138,12 @@ function playerGameOver() {
     document.getElementById("computer-score").innerText = 0; 
 }
 
+/**
+ * Function for resetting the game to default
+ */
+function resetGame() {
+    document.getElementById("game-over").innerText = "";
+    document.getElementById("player-score").innerText = 0;
+    document.getElementById("computer-score").innerText = 0; 
+}
 
