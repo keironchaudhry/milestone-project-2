@@ -101,11 +101,10 @@ function checkWinner(computerChoice, playerChoice) {
 function incrementPlayerScore() {
     let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++oldPlayerScore;
+
     if (oldPlayerScore === 10) {
-        document.getElementById("game-over").innerText = "Game over. Player has won!";
-        document.getElementById("player-score").innerText = 0;
-        document.getElementById("computer-score").innerText = 0;
-    } 
+        playerGameOver();
+    }
 }
 
 /**
@@ -114,13 +113,28 @@ function incrementPlayerScore() {
 function incrementComputerScore() {
     let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldComputerScore;
+
     if (oldComputerScore === 10) {
-        document.getElementById("game-over").innerText = "Game over. Computer has won!";
-        document.getElementById("player-score").innerText = 0;
-        document.getElementById("computer-score").innerText = 0;
+        computerGameOver();
     }
 }
 
+/**
+ * Function for declaring game over when player wins
+ */
+function playerGameOver() {
+    document.getElementById("game-over").innerText = "Game over. Player has won!";
+    document.getElementById("player-score").innerText = 0;
+    document.getElementById("computer-score").innerText = 0;
+}
 
+/**
+ * Function for declaring game over when computer wins
+ */
+ function computerGameOver() {
+    document.getElementById("game-over").innerText = "Game over. Computer has won!";
+    document.getElementById("player-score").innerText = 0;
+    document.getElementById("computer-score").innerText = 0; 
+}
 
 
