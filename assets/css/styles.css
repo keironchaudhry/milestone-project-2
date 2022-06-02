@@ -180,3 +180,55 @@ footer {
     transform: scale(1.3);
     transition: 50ms;
 }
+
+@media screen and (max-width: 375px) {
+
+    #main-title {
+        font-size: 1.5rem;
+    }
+
+    #mid-title {
+        font-size: 1rem;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    #rock {
+        font-size: 2rem;
+    }
+
+    #paper {
+        font-size: 2rem;
+    }
+
+    #scissors {
+        font-size: 2rem;
+    }
+
+    #lizard {
+        font-size: 2rem;
+    }
+
+    #spock {
+        font-size: 2rem;
+    }
+
+    #scores p {
+        font-size: 1rem;
+    }
+
+    #player-score {
+        font-size: 1rem;
+    }
+
+    #computer-score {
+        font-size: 1rem;
+    }
+
+    #reset {
+        font-size: 1rem;
+    }
+ 
+}
