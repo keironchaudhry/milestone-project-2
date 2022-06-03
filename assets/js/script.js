@@ -121,6 +121,14 @@ function incrementComputerScore() {
 }
 
 /**
+ * Function for highlighting the winning/losing hand choice
+ */
+function displayHand() {
+   
+}
+
+
+/**
  * Function for declaring game over when player wins
  */
 function playerGameOver() {
