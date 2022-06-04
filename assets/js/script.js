@@ -80,7 +80,7 @@ function randomChoice() {
 function checkWinner(computerChoice, playerChoice) {
     if (playerChoice === computerChoice) {
 
-        alert("A tie between both opponents!");
+        document.getElementById("game-alert").innerText = "Tie!";
 
     } else if (
 
@@ -112,6 +112,7 @@ function checkWinner(computerChoice, playerChoice) {
 function incrementPlayerScore() {
     let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++oldPlayerScore;
+    document.getElementById("game-alert").innerText = "";
 
     if (oldPlayerScore === 10) {
         playerGameOver();
@@ -124,6 +125,7 @@ function incrementPlayerScore() {
 function incrementComputerScore() {
     let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldComputerScore;
+    document.getElementById("game-alert").innerText = "";
 
     if (oldComputerScore === 10) {
         computerGameOver();
@@ -134,7 +136,7 @@ function incrementComputerScore() {
  * Function for declaring game over when player wins
  */
 function playerGameOver() {
-    document.getElementById("game-over").innerText = "Game over. Player has won!";
+    document.getElementById("game-alert").innerText = "Game over. Player has won!";
     document.getElementById("player-score").innerText = 0;
     document.getElementById("computer-score").innerText = 0;
 }
@@ -143,7 +145,7 @@ function playerGameOver() {
  * Function for declaring game over when computer wins
  */
  function computerGameOver() {
-    document.getElementById("game-over").innerText = "Game over. Computer has won!";
+    document.getElementById("game-alert").innerText = "Game over. Computer has won!";
     document.getElementById("player-score").innerText = 0;
     document.getElementById("computer-score").innerText = 0; 
 }
@@ -152,7 +154,7 @@ function playerGameOver() {
  * Function for resetting the game to default
  */
 function resetGame() {
-    document.getElementById("game-over").innerText = "";
+    document.getElementById("game-alert").innerText = "";
     document.getElementById("player-score").innerText = 0;
     document.getElementById("computer-score").innerText = 0; 
     document.getElementById("player-hand").innerText = "";

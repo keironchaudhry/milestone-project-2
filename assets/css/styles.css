@@ -167,7 +167,7 @@ footer {
     opacity: .5;
 }
 
-#game-over {
+#game-alert {
     margin: 30px;
     display: flex;
     justify-content: center;
