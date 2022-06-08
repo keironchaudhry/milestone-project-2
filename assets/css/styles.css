@@ -28,11 +28,9 @@ nav {
     padding: 15px 0 15px 0;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
+ul {
+    margin: 20px 0 20px 0;
 }
-
 .main-title {
     display: flex;
     justify-content: center;
@@ -232,7 +230,7 @@ footer {
     font-size: 2rem;
 }
 
-.guide-paragraph, p {
+.guide-paragraph p {
     text-align: center;
     margin: 20px 100px 0 100px;
     font-size: 20px;
@@ -254,7 +252,17 @@ footer {
 .video-wrapper iframe {
     width: 45%;
     height: 100%;
-  }
+}
+
+.guide-hands ul {
+    margin: 20px 0 20px 0;
+}
+
+.guide-hands li p {
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+}
+
 
 @media screen and (max-width: 375px) {
 
