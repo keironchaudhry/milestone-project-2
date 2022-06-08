@@ -224,6 +224,25 @@ footer {
     transition: 50ms;
 }
 
+/* guide page */
+
+.guide-paragraph, h3 {
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+.guide-paragraph, p {
+    text-align: center;
+    margin: 20px 100px 0 100px;
+    font-size: 20px;
+}
+
+.guide-paragraph, iframe {
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
 @media screen and (max-width: 375px) {
 
     #main-title {
