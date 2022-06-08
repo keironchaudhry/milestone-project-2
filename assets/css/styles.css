@@ -241,7 +241,20 @@ footer {
 .guide-paragraph, iframe {
     justify-content: center;
     margin: 30px 0 30px 0;
+    height: 400px;
 }
+
+.video-wrapper {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: contents;
+}
+
+.video-wrapper iframe {
+    width: 45%;
+    height: 100%;
+  }
 
 @media screen and (max-width: 375px) {
 
