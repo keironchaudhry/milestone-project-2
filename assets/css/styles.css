@@ -269,13 +269,15 @@ ul {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
 
-    #main-title {
-        font-size: 1.5rem;
+    /* media query 375px and lower for principal landing page  */
+
+    .main-title {
+        font-size: 1.2rem;
     }
 
-    #mid-title {
+    .mid-title {
         font-size: 1rem;
     }
 
@@ -319,4 +321,27 @@ ul {
         font-size: 1rem;
     }
  
+}
+
+@media screen and (max-width: 430px) {
+
+    /* media query 425px and lower for guide page */
+
+    .guide-paragraph p {
+        font-size: 15px;
+    }
+
+    .video-wrapper iframe {
+        width: 75%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    /* media query 330px and lower for guide page */
+
+    .guide-paragraph p {
+        margin: 20px 30px 0 30px;
+    }
 }
