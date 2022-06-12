@@ -39,6 +39,9 @@ Media
 Acknowledgments
 Useful sources
 
+
+# UX 
+
 ### **User Demographic**
 
 This site has been designed in mind for people of all ages, as its logical is fairly simple and the aim of the game can be completed by both an infant and an adult. 
@@ -49,3 +52,25 @@ This site has been designed in mind for people of all ages, as its logical is fa
 * To be able to find the appropriate guide information for rules.
 * To be able to know who has won or lost.
 * To be able to reset the game afresh.
+
+### **Design**
+
+The design for the website was inspired by the Love Maths project in terms of how it has been laid out, however no direct code has been borrowed. 
+
+The aim of the site was to create a visually complimenting environment where the background colours contrast pleasantly along with the emoji icons picked. 
+
+The site consists of two HTML pages which are both interlinked and fully accessible, the first one being the landing page with the actual interactive game, and the second page being a written guide to where the idea for Rock, Paper, Scissors, Lizard, Spock came from, with a quote and a short clip from the TV show Big Bang Theory. Afterwards a visual guide for the winning hands appear toward the end of the page for clarity and then a button which leads the user straight back to the game.
+
+### **Typography**
+
+The fonts applied to this website was Akshar as the principal font of the headers and subheadings, and PT Sans Narrow for the paragraph elements across both pages.
+
+### **Colour**
+
+The colour design used for this project was the use of two principal colours, "Gainsboro" as the background colour and "Aliceblue" for the navigation bar. These two colours contrasted wonderfully to give a sense of modernity. They also contrasted particularly well with the colour of the emojis used for the hand selections, which range from gray, white, red, green and brown. The colour of the Reset and Guide buttons are a pinkish-red colour, "rgba(168, 52, 52, 0.671)". Overall the choice of colours all compliment one another, giving ease of access across the user interface.
+
+### **Images**
+
+No images were used in the making of this site however emojis were used for buttons. They were picked in accordance of colour, contrast, style and overall usefulness within the site and the user interface.
+
+# Features
