@@ -29,7 +29,7 @@ Features
   Landing page
   Guide page
 Site features
-  Navigation bar
+  Header
   Guide button
   Choice(s) of hand
   Reset
@@ -74,3 +74,85 @@ The colour design used for this project was the use of two principal colours, "G
 No images were used in the making of this site however emojis were used for buttons. They were picked in accordance of colour, contrast, style and overall usefulness within the site and the user interface.
 
 # Features
+
+#### ** "Game" page
+    * Header 
+    * 'Guide' button
+    * 'Hand' choice button(s)
+    * Player/Computer score count
+    * 'Reset' button
+    
+#### ** "Guide" page
+    * Header
+    * Description
+    * Video
+    * List of possibilities
+    * 'Return' button
+    
+# **Site features**
+
+### **Header**
+
+  * Featured at the top of the page, it displays the game title clearly with a sub-title surrounded by emojis. 
+  * The header clearly indicates what the user is playing.
+  * Header is identical on both the landing page and the 'guide' page.
+
+![nav-bar-screenshot](https://user-images.githubusercontent.com/78651133/173321793-7ac82d1d-3935-4b13-9b3a-1d2f0ee09f7a.jpg)
+
+### **Landing page**
+
+  * Features a 'guide' button, taking the user to the help page with instructions.
+  * Features the buttons in which emojis have been made to clearly represent the choice of hand.
+  * Displays the player and computer score, which are aligned and centred on the left and right for clarity. Emojis have also been placed to show clear representation both the player and computer.
+  * Features a 'reset' button, identical in design to the 'guide' button for consistency, that resets the points or any modification to the page by the user/computer.
+
+![landing-page-screenshot](https://user-images.githubusercontent.com/78651133/173323384-fef85281-b350-40d2-8dc5-4373eafed185.jpg)
+
+### **Guide Page**
+
+  * Features brief and concise information on the origins of the game for user knowledge.
+  * Features a video of the exact clip where the game's origins is referenced (The Big Bang Theory, season 5, episode 17).
+  * Displays a list of the winning possibilities, using the same emojis in the game page as a visual reference for user clarity.
+  * Features a 'return to game' button, set at the bottom of the page, guiding the user back to the game page. 
+
+![guide-page-screenshot](https://user-images.githubusercontent.com/78651133/173327718-313845f9-b33c-45df-82b2-c1f75cabf381.jpg)
+![guide-page-outcomes-screenshot](https://user-images.githubusercontent.com/78651133/173327738-2c6fad31-6e23-4f97-b0fc-b2928079706b.jpg)
+
+# Technologies used
+
+  * HTML
+  * CSS
+  * Javascript
+
+# Testing
+
+**Validator testing**
+
+# Development and deployment
+
+The development environment used for this project was Gitpod. Regular commits and pushes to Github have been employed to be able to track and trace the development process of the website.
+
+The live version of the project is deployed at GitHub pages.
+
+The procedure for deployment followed the "Creating your site" steps provided in GitHub Docs.
+
+1.	Log into Github.
+2.	Select desired GitHub Repository to be deployed live.
+3.	Underneath the repository name, click the “Settings” option.
+4.	In the sub-section list on the left, under “Code and automation”, click “Pages”.
+5.	Within the ”Source” section choose ”main” as Branch and root as folder and click ”Save”.
+6.	The page refreshes and a website shall then deploy via a link.
+
+The following is the live link deployed: https://keironchaudhry.github.io/milestone-project-2/
+
+# Media
+
+# Acknowledgments
+
+# Useful sources
+
+
+
+
+
+
