@@ -18,26 +18,26 @@ The required technologies are Javascript, CSS and HTML.
 
 # Table of content
 
-UX
-  User demographics
-  User goals
-  Design
-  Typography
-  Colour
-  Images
-Features
-  Landing page
-  Guide page
-Site features
-  Header
-  Guide button
-  Choice(s) of hand
-  Reset
-Testing
-Development and deployment
-Media
-Acknowledgments
-Useful sources
+* [UX](#ux)
+     * [User demographics](#user-demographic)
+     * [User goals](#user-goals)
+     * [Design](#design)
+     * [Typography](#typography)
+     * [Colour](#colour)
+     * [Images](#images)
+* [Features](#features)
+     * ['Game' page](#-game-page)
+     * ['Guide' page](#-guide-page)
+* [Site features](#site-features)
+     * [Header](#header)
+     * [Landing page](#landing-page)
+     * [Guide page](#guide-page)
+* [Technologies used](#technologies-used)
+* [Testing](#testing)
+* [Development and deployment](#development-and-deployment)
+* [Media](#media)
+* [Acknowledgments](#acknowledgments)
+* [Useful sources](#useful-sources)
 
 
 # UX 
@@ -147,10 +147,35 @@ The following is the live link deployed: https://keironchaudhry.github.io/milest
 
 # Media
 
+All emojis were borrowed from https://getemoji.com/. 
+
+The clip from the Big Bang Theory is a Youtube link (https://www.youtube.com/watch?v=x5Q6-wMx-K8).
+
 # Acknowledgments
+
+For inspiration, guidance and inputs, thank you to:
+
+Sandeep Aggarwal
+
+* Great mentor at Code Institute
+
+Jack Crymble
+
+* Friend and guide, thank you for your knowledge and insight!
+
+Jody Murray
+
+* Fellow student and colleague, thank you for your input!
 
 # Useful sources
 
+The website outside of Code Institute that has provided me with a lot of guidance are:
+
+https://www.w3schools.com/
+
+https://stackoverflow.com
+
+For the responsive screen, http://ami.responsivedesign.is/
 
 
 
