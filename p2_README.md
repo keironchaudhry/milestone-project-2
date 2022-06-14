@@ -8,7 +8,7 @@ Users of the game will contend against the computer, which generates a hand choi
 
 The website contains two pages, the landing page with the gameplay tools and a guide page, with instructions. Both pages are linked via buttons and are easily accessible. 
 
-A deployed version of the website can be found here: https://keironchaudhry.github.io/milestone-project-2/
+A deployed version of the website can be found here: https://keironchaudhry.github.io/p2-rock-paper-scissors-lizard-spock/
 
 **Requirements**
 
@@ -143,7 +143,7 @@ The procedure for deployment followed the "Creating your site" steps provided in
 5.	Within the ”Source” section choose ”main” as Branch and root as folder and click ”Save”.
 6.	The page refreshes and a website shall then deploy via a link.
 
-The following is the live link deployed: https://keironchaudhry.github.io/milestone-project-2/
+The following is the live link deployed: https://keironchaudhry.github.io/p2-rock-paper-scissors-lizard-spock/
 
 # Media
 
