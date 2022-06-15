@@ -10,7 +10,7 @@ body {
     background-color: gainsboro;
 }
 
-body h1, h3, h4 {
+body h1, h2, h3, h4 {
     font-family: 'Akshar', sans-serif;
 }
 
@@ -58,9 +58,9 @@ ul {
     background-color: rgba(168, 52, 52, 0.671);
     color: #fff;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     cursor: pointer; 
     display: flex;
     justify-content: center;
