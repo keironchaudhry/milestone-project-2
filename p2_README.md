@@ -126,7 +126,29 @@ No images were used in the making of this site however emojis were used for butt
 
 # Testing
 
+Testing the functionality and overall appearence of the website has been largely dealt with throughout the creation and development of the site.
+
+Testing of the site has been performed with Google Chrome, Mozilla Firefox and Safari. Testing the different sizes has been carried out using Google Developer Tools.
+
+Some issues that came about were:
+
 **Validator testing**
+
+* HTML
+    * No errors were returned when passing through the official W3C Validator
+
+![project 2 html validator (1)](https://user-images.githubusercontent.com/78651133/173756773-a9c9d06b-ea88-4a2c-949e-3087674d352c.jpg)
+![project 2 html validator (2)](https://user-images.githubusercontent.com/78651133/173756787-bbdc08e5-3849-47f2-b6e2-7248af2bd794.jpg)
+
+* CSS
+    * No errors were returned when passing through the official Jigsaw validator
+
+![project 2 css validator](https://user-images.githubusercontent.com/78651133/173756975-1e87deca-a581-468d-806e-b5b8990f5d80.jpg)
+
+* Javascript
+    * No errors were returned when passing through the official JSHint Javascript validator
+
+![project 2 javascript validator ](https://user-images.githubusercontent.com/78651133/173757124-472785fa-9f23-4985-85dd-903fccbfa771.jpg)
 
 # Development and deployment
 
