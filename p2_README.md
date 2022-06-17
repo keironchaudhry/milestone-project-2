@@ -132,6 +132,22 @@ Testing of the site has been performed with Google Chrome, Mozilla Firefox and S
 
 Some issues that came about were:
 
+    1. The Youtube clip on the Guide page was causing an unexpected margin to occur down the right-hand side of the page.
+        * Fixed in the media query, removed problematic code and added better CSS style.
+        
+    2. The buttons across all pages were nested in anchor links, which caused an error in the HTML validator.
+        * Removed the anchor links and replaced with form tags instead, which passed the HTML validator.
+        
+    3. There was duplicated code from the development process of the 'Game' page, picked up in the HTML validator.
+        * Removed the duplicated code and made sure no such duplication was seen across any of the pages. 
+        
+    4. The nav bar was not nested within a header tag.
+        * For consistency, added a <header> tag into both HTML pages and nested <nav> elements within them.
+        
+**Ongoing bugs**
+
+There are currently no ongoing bugs in this project at present.
+
 **Validator testing**
 
 * HTML
