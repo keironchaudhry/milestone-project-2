@@ -17,6 +17,7 @@ const options = document.querySelectorAll(".user-option");
             const computerInput = computerOptions[Math.floor(Math.random() * 5)];
             document.getElementById("computer-hand").textContent = computerInput;
 
+            checkWinner(playerInput, computerInput);
 })})
 
 // /**
@@ -91,23 +92,23 @@ const options = document.querySelectorAll(".user-option");
 /**
  * Function for determining whether Player or AI has won
  */
-function checkWinner(computerChoice, playerChoice) {
-    if (playerChoice === computerChoice) {
+function checkWinner(computerInput, playerInput) {
+    if (playerInput === computerInput) {
 
         document.getElementById("game-alert").innerText = "Tie!";
 
     } else if (
 
-        (computerChoice == "rock" && playerChoice == "lizard") ||
-        (computerChoice == "rock" && playerChoice == "scissors") ||
-        (computerChoice == "paper" && playerChoice == "rock") ||
-        (computerChoice == "paper" && playerChoice == "spock") ||
-        (computerChoice == "scissors" && playerChoice == "lizard") ||
-        (computerChoice == "scissors" && playerChoice == "paper") ||
-        (computerChoice == "lizard" && playerChoice == "spock") ||
-        (computerChoice == "lizard" && playerChoice == "paper") ||
-        (computerChoice == "spock" && playerChoice == "rock") ||
-        (computerChoice == "spock" && playerChoice == "scissors") 
+        (computerInput == "🪨" && playerInput == "🦎") ||
+        (computerInput == "🪨" && playerInput == "✂️") ||
+        (computerInput == "📄" && playerInput == "🪨") ||
+        (computerInput == "📄" && playerInput == "🖖🏽") ||
+        (computerInput == "✂️" && playerInput == "🦎") ||
+        (computerInput == "✂️" && playerInput == "📄") ||
+        (computerInput == "🦎" && playerInput == "🖖🏽") ||
+        (computerInput == "🦎" && playerInput == "📄") ||
+        (computerInput == "🖖🏽" && playerInput == "🪨") ||
+        (computerInput == "🖖🏽" && playerInput == "✂️") 
 
     ) {
 
