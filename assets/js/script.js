@@ -1,9 +1,22 @@
-document.getElementById("rock").onclick=playerRock;
-document.getElementById("paper").onclick=playerPaper;
-document.getElementById("scissors").onclick=playerScissors;
-document.getElementById("lizard").onclick=playerLizard;
-document.getElementById("spock").onclick=playerSpock;
+// document.getElementById("rock").onclick=playerRock;
+// document.getElementById("paper").onclick=playerPaper;
+// document.getElementById("scissors").onclick=playerScissors;
+// document.getElementById("lizard").onclick=playerLizard;
+// document.getElementById("spock").onclick=playerSpock;
 document.getElementById("reset").onclick=resetGame;
+
+const options = document.querySelectorAll(".user-options");
+
+    options.forEach((option) => {
+        option.addEventListener("click", function() {
+            const playerInput = this.textContent;
+            document.getElementById("player-hand").textContent = playerInput;
+        
+            const computerOptions = ["🪨", "📄", "✂️", "🦎", "🖖🏽"];
+            const computerInput = computerOptions[Math.floor(Math.random() * 5)];
+            document.getElementById("computer-hand").textContent = computerInput;
+
+        })})
 
 /**
  * Function for player clicking "rock"
