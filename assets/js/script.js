@@ -5,20 +5,37 @@
 // document.getElementById("spock").onclick=playerSpock;
 document.getElementById("reset").onclick=resetGame;
 
+// const options = document.querySelectorAll(".user-option");
+
+//     options.forEach((option) => {
+//         option.addEventListener("click", function() {
+//             const playerInput = this.textContent;
+//             document.getElementById("player-hand").textContent = playerInput;
+        
+        
+//             const computerOptions = ["🪨", "📄", "✂️", "🦎", "🖖🏽"];
+//             const computerInput = computerOptions[Math.floor(Math.random() * 5)];
+//             document.getElementById("computer-hand").textContent = computerInput;
+
+//             checkWinner(playerInput, computerInput);
+// })})
+
 const options = document.querySelectorAll(".user-option");
 
     options.forEach((option) => {
-        option.addEventListener("click", function() {
-            const playerInput = this.textContent;
-            document.getElementById("player-hand").textContent = playerInput;
-        
-        
-            const computerOptions = ["🪨", "📄", "✂️", "🦎", "🖖🏽"];
-            const computerInput = computerOptions[Math.floor(Math.random() * 5)];
-            document.getElementById("computer-hand").textContent = computerInput;
+        option.onclick=runGame;
+})
 
-            checkWinner(playerInput, computerInput);
-})})
+function runGame() {
+
+    const playerInput = this.textContent;
+    const computerOptions = ["🪨", "📄", "✂️", "🦎", "🖖🏽"];
+    const computerInput = computerOptions[Math.floor(Math.random() * 5)];
+    document.getElementById("player-hand").textContent = playerInput;
+    document.getElementById("computer-hand").textContent = computerInput;
+
+    checkWinner(playerInput, computerInput);
+}
 
 // /**
 //  * Function for player clicking "rock"
