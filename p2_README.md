@@ -135,14 +135,17 @@ Some issues that came about were:
     1. The Youtube clip on the Guide page was causing an unexpected margin to occur down the right-hand side of the page.
         * Fixed in the media query, removed problematic code and added better CSS style.
         
-    2. The buttons across all pages were nested in anchor links, which caused an error in the HTML validator.
-        * Removed the anchor links and replaced with form tags instead, which passed the HTML validator.
+    2. The buttons across all pages were nested in <a> anchor links, which caused an error in the HTML validator.
+        * Removed the anchor links and replaced with <form> tags instead, which passed the HTML validator.
         
     3. There was duplicated code from the development process of the 'Game' page, picked up in the HTML validator.
         * Removed the duplicated code and made sure no such duplication was seen across any of the pages. 
         
     4. The nav bar was not nested within a header tag.
         * For consistency, added a <header> tag into both HTML pages and nested <nav> elements within them.
+    
+    5. Javascript code was generally quite repetitive upon revision, with much of the code being functionally redundant. 
+        * All JS code has since been refactored (using the forEach method and a single .onclick rather than several) and better reflects my learning of Javascript during this project. 
         
 **Ongoing bugs**
 
@@ -167,7 +170,7 @@ There are currently no ongoing bugs in this project at present.
 
     * No errors were returned when passing through the official JSHint Javascript validator
 
-![project 2 javascript validator ](https://user-images.githubusercontent.com/78651133/173757124-472785fa-9f23-4985-85dd-903fccbfa771.jpg)
+![project 2 javascript validator ](https://user-images.githubusercontent.com/78651133/175315069-ff020cf2-d3a0-4f26-a64c-9a1b05a26c01.jpg)
 
 * Lighthouse testing
 
