@@ -55,7 +55,7 @@ This site has been designed in mind for people of all ages, as its logical is fa
 
 ### **Design**
 
-The design for the website was inspired by the Love Maths project in terms of how it has been laid out, however no direct code has been borrowed. 
+The design for the website was inspired by the [Love Maths project](https://keironchaudhry.github.io/love-maths/) in terms of how it has been laid out, however no direct code has been borrowed. 
 
 The aim of the site was to create a visually complimenting environment where the background colours contrast pleasantly along with the emoji icons picked. 
 
@@ -145,11 +145,12 @@ Some issues that came about were:
         * For consistency, added a <header> tag into both HTML pages and nested <nav> elements within them.
     
     5. Javascript code was generally quite repetitive upon revision, with much of the code being functionally redundant. 
-        * All JS code has since been refactored (using the forEach method and a single .onclick rather than several) and better reflects my learning of Javascript during this project. 
+        * All JS code has since been refactored (using the forEach method and a single .onclick rather than several) 
+        and better reflects my learning of Javascript during this project. 
         
 **Ongoing bugs**
 
-There are currently no ongoing bugs in this project at present.
+Whilst there are no ongoing bugs in this project at present, future versions of this project will have more refactored Javascript code for the point system.
 
 **Validator testing**
 
