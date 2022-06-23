@@ -5,7 +5,7 @@ const options = document.querySelectorAll(".user-option");
 
     options.forEach((option) => {
         option.onclick=runGame;
-})
+});
 
 function runGame() {
 
