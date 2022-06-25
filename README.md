@@ -146,6 +146,9 @@ Some issues that came about were:
     5. Javascript code was generally quite repetitive upon revision, with much of the code being functionally redundant. 
         * All JS code has since been refactored (using the forEach method and a single .onclick rather than several) 
         and better reflects my learning of Javascript during this project. 
+    
+    6. HTML code had indentation issues.
+        * Passed the code through a formatter and replaced existing code.
         
 **Ongoing bugs**
 
