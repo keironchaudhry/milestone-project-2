@@ -56,7 +56,7 @@ function checkWinner(computerInput, playerInput) {
 
 
 /**
- * Increase player score
+ * Increases the player score
  */
 function incrementPlayerScore() {
     let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
@@ -70,7 +70,7 @@ function incrementPlayerScore() {
 
 
 /**
- * Increase AI score
+ * Increases the AI score
  */
 function incrementComputerScore() {
     let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
@@ -84,7 +84,7 @@ function incrementComputerScore() {
 
 
 /**
- * Declare game over when player wins
+ * Declares game over when player wins
  */
 function playerGameOver() {
     document.getElementById("game-alert").innerText = "Game over. Player has won!";
@@ -94,7 +94,7 @@ function playerGameOver() {
 
 
 /**
- * Declare game over when computer wins
+ * Declares game over when computer wins
  */
  function computerGameOver() {
     document.getElementById("game-alert").innerText = "Game over. Computer has won!";
