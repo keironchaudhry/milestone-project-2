@@ -7,6 +7,9 @@ const options = document.querySelectorAll(".user-option");
         option.onclick=runGame;
 });
 
+/**
+ * Runs the principal game 
+ */
 function runGame() {
 
     const playerInput = this.textContent;
@@ -20,7 +23,7 @@ function runGame() {
 
 
 /**
- * Function for determining whether Player or AI has won
+ * Determines whether Player or AI has won
  */
 function checkWinner(computerInput, playerInput) {
     if (playerInput === computerInput) {
@@ -53,7 +56,7 @@ function checkWinner(computerInput, playerInput) {
 
 
 /**
- * Function for increasing player score
+ * Increase player score
  */
 function incrementPlayerScore() {
     let oldPlayerScore = parseInt(document.getElementById("player-score").innerText);
@@ -67,7 +70,7 @@ function incrementPlayerScore() {
 
 
 /**
- * Function for increasing AI score
+ * Increase AI score
  */
 function incrementComputerScore() {
     let oldComputerScore = parseInt(document.getElementById("computer-score").innerText);
@@ -81,7 +84,7 @@ function incrementComputerScore() {
 
 
 /**
- * Function for declaring game over when player wins
+ * Declare game over when player wins
  */
 function playerGameOver() {
     document.getElementById("game-alert").innerText = "Game over. Player has won!";
@@ -91,7 +94,7 @@ function playerGameOver() {
 
 
 /**
- * Function for declaring game over when computer wins
+ * Declare game over when computer wins
  */
  function computerGameOver() {
     document.getElementById("game-alert").innerText = "Game over. Computer has won!";
@@ -101,7 +104,7 @@ function playerGameOver() {
 
 
 /**
- * Function for resetting the game to default
+ * Resets game to default settings
  */
 function resetGame() {
     document.getElementById("game-alert").innerText = "";
