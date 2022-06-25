@@ -37,7 +37,6 @@ The required technologies are Javascript, CSS and HTML.
 * [Development and deployment](#development-and-deployment)
 * [Media](#media)
 * [Acknowledgments](#acknowledgments)
-* [Useful sources](#useful-sources)
 
 
 # UX 
@@ -217,15 +216,7 @@ Jody Murray
 
 * Fellow student and colleague, thank you for your input!
 
-# Useful sources
 
-The website outside of Code Institute that has provided me with a lot of guidance are:
-
-https://www.w3schools.com/
-
-https://stackoverflow.com
-
-For the responsive screen, http://ami.responsivedesign.is/
 
 
 
